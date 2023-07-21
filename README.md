@@ -1,2 +1,3 @@
-# garage
-Project Organization
+# Garage
+
+    Project Organization
