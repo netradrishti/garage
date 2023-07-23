@@ -14,6 +14,13 @@ WORKSPACE_TOKEN = "workspace"
 GOOGLE_CONTENT_DIR = "/content"
 
 
+def is_interactive():
+    """Checks whether script is running in interactivde mode"""
+
+    import __main__ as main
+    return not hasattr(main, '__file__')
+
+
 
 def in_collab() -> bool:
   '''Checks whether script is running in Google Colab'''
